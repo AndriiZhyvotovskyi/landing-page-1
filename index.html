@@ -3,80 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>landing page #1</title>
   </head>
 
   <body>
-    <div class="page-header">
+    <header class="header">
       <div class="container">
-        <header class="header">
-          <div class="navigation">
-            <a href="#" class="logo">
-              <img src="./images/logo.png" alt="logotype" class="logotype" />
-            </a>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="#" class="menu__link">about us</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">our focus</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">portfolio</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">our team</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">work steps</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">pricing</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">testimonials</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">blog</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">contact</a>
-                </li>
-              </ul>
-            </nav>
+        <div class="navigation">
+          <a href="#" class="logo">
+            <img src="./images/logo.png" alt="logotype" class="logotype" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">about us</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">our focus</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">portfolio</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">our team</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">work steps</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">pricing</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">testimonials</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">blog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h1 class="header__title"></h1>
+        <div class="header__button"></div>
+        <ul class="header__description">
+          <li class="header__description-list">
+            <svg class="header__description-icon">
+              <use href="./images/sprite.svg#dolar"></use>
+            </svg>
+            <p class="header__description-text">
+              fixed price projects
+            </p>
+          </li>
+          <li class="header__description-list">
+            <svg class="header__description-icon">
+              <use href="./images/sprite.svg#clock"></use>
+            </svg>
+            <p class="header__description-text">
+              receive on time
+            </p>
+          </li>
+          <li class="header__description-list">
+            <svg class="header__description-icon">
+              <use href="./images/sprite.svg#check"></use>
+            </svg>
+            <p class="header__description-text">
+              satisfaction guranteed
+            </p>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="container">
+          <div class="about-wrapper">
+            <div class="about-wrapper__overlay">
+              <img
+                src="./images/about.jpg"
+                alt="about"
+                class="about-wrapper__image"
+              />
+            </div>
+            <div class="about-wrapper__description">
+              <h2 class="section__title"></h2>
+              <p class="section__description"></p>
+            </div>
           </div>
-          <h1 class="header__title"></h1>
-          <div class="header__button"></div>
-          <ul class="header__description">
-            <li class="header__description-list">
-              <svg class="header__description-icon">
-                <use href="./images/sprite.svg#dolar"></use>
-              </svg>
-              <p class="header__description-text">
-                fixed price projects
-              </p>
+        </div>
+      </section>
+      <section class="focus">
+        <div class="container">
+          <h2 class="section-title"></h2>
+          <p class="section-description"></p>
+          <ul class="focus__list">
+            <li class="focus__item">
+              <svg class="focus__item_image"></svg>
+              <h3 class="focus__item_title"></h3>
+              <p class="focus__item_description"></p>
             </li>
-            <li class="header__description-list">
-              <svg class="header__description-icon">
-                <use href="./images/sprite.svg#clock"></use>
-              </svg>
-              <p class="header__description-text">
-                receive on time
-              </p>
+            <li class="focus__item">
+              <svg class="focus__item_image"></svg>
+              <h3 class="focus__item_title"></h3>
+              <p class="focus__item_description"></p>
             </li>
-            <li class="header__description-list">
-              <svg class="header__description-icon">
-                <use href="./images/sprite.svg#check"></use>
-              </svg>
-              <p class="header__description-text">
-                satisfaction guranteed
-              </p>
+            <li class="focus__item">
+              <svg class="focus__item_image"></svg>
+              <h3 class="focus__item_title"></h3>
+              <p class="focus__item_description"></p>
+            </li>
+            <li class="focus__item">
+              <svg class="focus__item_image"></svg>
+              <h3 class="focus__item_title"></h3>
+              <p class="focus__item_description"></p>
             </li>
           </ul>
-        </header>
-      </div>
-    </div>
+        </div>
+      </section>
+      <section class="video">
+        <video src=""></video>
+      </section>
+      <section class="portfolio">
+        <h2 class="section-title"></h2>
+        <p class="section-description"></p>
+        <ul class="potrfolio__list">
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+          <li class="portfolio__item"></li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
