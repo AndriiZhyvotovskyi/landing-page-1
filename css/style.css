@@ -110,24 +110,27 @@ body {
 }
 
 /*------------------------------ section ----------------------------------*/
+.section-title__wrapper {
+  position: relative;
+}
 .section-title {
   font-family: var(--font-second);
   font-size: 50px;
   text-transform: capitalize;
   text-align: center;
-  position: relative;
-
-  z-index: 2;
+  z-index: 1;
 }
-.section-title::before {
-  content: "02";
+.section-title__overlay {
+  content: "";
   font-family: var(--font-first);
   color: var(--color-title-gray);
   font-size: 274px;
   position: absolute;
-  bottom: -60px;
+
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 0;
 }
 
 /*------------------------------ header-hero ---------------------------------*/
