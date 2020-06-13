@@ -1,0 +1,13 @@
+:root {
+  --font-first: "Poppins", sans-serif;
+  --font-second: "Baskervville", serif;
+  --color-first: rgb(255, 255, 255);
+  --color-second: rgb(39, 39, 39);
+  --color-red: rgb(252, 95, 69);
+  --color-green: rgb(56, 198, 149);
+  --color-violet: rgb(178, 124, 245);
+  --color-orange: rgb(254, 185, 96);
+  --color-gray: rgb(97, 97, 97);
+  --color-light-gray: rgb(247, 247, 247);
+  --color-title-gray: rgb(240, 240, 240);
+}
