@@ -98,6 +98,10 @@ body {
   color: var(--color-orange);
   fill: var(--color-orange);
 }
+.red {
+  color: var(--color-red);
+  fill: var(--color-red);
+}
 .container {
   max-width: 1170px;
   margin: auto;
@@ -110,27 +114,28 @@ body {
 }
 
 /*------------------------------ section ----------------------------------*/
-.section-title__wrapper {
-  position: relative;
-}
+
 .section-title {
   font-family: var(--font-second);
   font-size: 50px;
   text-transform: capitalize;
   text-align: center;
-  z-index: 1;
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.section-title__overlay {
-  content: "";
+.section-number {
   font-family: var(--font-first);
   color: var(--color-title-gray);
   font-size: 274px;
-  position: absolute;
-
-  bottom: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
+  font-weight: 700;
+  line-height: 200px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.section-description {
+  margin-bottom: 40px;
 }
 
 /*------------------------------ header-hero ---------------------------------*/
@@ -228,27 +233,265 @@ body {
   background-color: var(--color-first);
   width: 652px;
   position: absolute;
-  padding: 90px 80px 100px 80px;
+  padding: 5px 80px 100px 5px;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  box-shadow: 0px 0px 10px 0px rgba(207, 205, 207, 1);
+}
+.about-wrapper__description > .section-number {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.about-wrapper__description > .section-title {
+  left: 200px;
+  top: 80px;
+}
+.about-wrapper__description > .section__description {
+  padding: 0 0 0 80px;
+  font-size: 15px;
+  color: var(--color-second);
+  line-height: 24px;
+}
+.section__description + .section__description {
+  margin-top: 20px;
 }
 
 /*---------------------------------- focus --------------------------------------*/
 .focus {
   background-color: var(--color-light-gray);
-  padding: 140px 0 150px 0;
+  padding: 5px 0 150px 0;
+  position: relative;
 }
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
-/*---------------------------------- section --------------------------------------*/
+.section-description {
+  text-align: center;
+}
+.focus__list {
+  display: flex;
+  justify-content: space-between;
+}
+.focus__item {
+  text-align: center;
+  padding: 60px 10px 60px 10px;
+  background-color: var(--color-first);
+  flex: 0 0 22%;
+}
+.focus__item-image {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 20px;
+}
+.focus__item-title {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.focus__item-description {
+  line-height: 28px;
+}
+.focus__item:nth-child(1) {
+  border-bottom: 3px solid var(--color-red);
+}
+.focus__item:nth-child(2) {
+  border-bottom: 3px solid var(--color-green);
+}
+.focus__item:nth-child(3) {
+  border-bottom: 3px solid var(--color-violet);
+}
+.focus__item:nth-child(4) {
+  border-bottom: 3px solid var(--color-orange);
+}
+
+/*---------------------------------- video -----------------------------------*/
+.video {
+  background-color: brown;
+}
+
+/*---------------------------------- section -----------------------------------*/
+.portfolio {
+  position: relative;
+  padding: 10px 0 150px 0;
+}
+.potrfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.portfolio__image-wrapper {
+}
+
+/*---------------------------------- team -----------------------------------*/
+.team {
+  position: relative;
+  background-color: var(--color-light-gray);
+  padding: 5px 0 150px 0;
+}
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.team__item {
+  padding-bottom: 20px;
+  background-color: var(--color-first);
+  width: 270px;
+  box-shadow: 0px 0px 10px 0px rgba(207, 205, 207, 1);
+}
+.team__image {
+  margin: 3px auto 15px auto;
+}
+.team__title {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.team__description {
+  font-size: 13px;
+  color: var(--color-second);
+  text-transform: capitalize;
+}
+.team__item:nth-child(1) {
+  border-bottom: 3px solid var(--color-red);
+}
+.team__item:nth-child(2) {
+  border-bottom: 3px solid var(--color-green);
+}
+.team__item:nth-child(3) {
+  border-bottom: 3px solid var(--color-violet);
+}
+.team__item:nth-child(4) {
+  border-bottom: 3px solid var(--color-orange);
+}
+
+/*------------------------------- statistics ----------------------------------*/
+.statistics {
+  background-image: linear-gradient(
+      rgba(38, 39, 50, 0.85),
+      rgba(38, 39, 50, 0.85)
+    ),
+    url(../images/background-section.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 145px 0 130px 0;
+}
+.statistics__list {
+  display: flex;
+  justify-content: space-between;
+}
+.statistics__item {
+  flex: 0 0 22%;
+  text-align: center;
+}
+.statistics__icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+.statistics__indicators {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-first);
+  margin-bottom: 15px;
+}
+.statistics__description {
+  font-size: 15px;
+  color: var(--color-first);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.statistics__radio {
+  width: 20px;
+  height: 20px;
+}
+
+/*---------------------------------- steps -----------------------------------*/
+.steps {
+  padding: 5px 0 150px 0;
+  position: relative;
+}
+.steps__list {
+  display: flex;
+  flex-direction: column;
+}
+.steps > .section-description {
+  margin-bottom: 100px;
+}
+.steps__item {
+  background-repeat: no-repeat;
+  width: 556px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+.steps__item-one {
+  background-image: url(../images/steps/step1.jpg);
+}
+.steps__item-two {
+  background-image: url(../images/steps/step2.jpg);
+}
+.steps__item-three {
+  background-image: url(../images/steps/step3.jpg);
+}
+.steps__item-four {
+  background-image: url(../images/steps/step4.jpg);
+}
+.steps__wrapper {
+  background-color: var(--color-first);
+  box-shadow: 0px 0px 10px 0px rgba(207, 205, 207, 1);
+  padding: 75px 60px 60px 125px;
+  width: 460px;
+  position: absolute;
+}
+.steps__title {
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.steps__description {
+  font-size: 15px;
+  line-height: 30px;
+  position: relative;
+}
+.steps__number {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 70px;
+  font-family: var(--font-second);
+  color: var(--color-title-gray);
+}
+.steps__number::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: var(--color-title-gray);
+  transform: rotate(-45deg) translate(10px, 20px);
+  transform-origin: 0;
+}
+.steps__wrapper-one {
+  top: -40px;
+  left: -320px;
+}
+.steps__wrapper-two {
+  top: -40px;
+  right: -320px;
+}
+.steps__wrapper-three {
+  top: -40px;
+  left: -320px;
+}
+.steps__wrapper-four {
+  top: -40px;
+  right: -320px;
+}
+
+/*---------------------------------- section -----------------------------------*/
+/*---------------------------------- section -----------------------------------*/
+/*---------------------------------- section -----------------------------------*/
+/*---------------------------------- section -----------------------------------*/
+/*---------------------------------- section -----------------------------------*/
+/*---------------------------------- section -----------------------------------*/
+/*---------------------------------- section -----------------------------------*/
+/*---------------------------------- section -----------------------------------*/
