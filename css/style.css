@@ -138,6 +138,7 @@ body {
 .bold {
   font-weight: 700;
 }
+/* border: 1px solid red; */
 
 /*------------------------------ section ----------------------------------*/
 
@@ -346,19 +347,39 @@ body {
   text-align: center;
 }
 .portfolio__item:nth-last-child(n + 4) {
-  margin-bottom: 20px;
-  border: 1px solid red;
+  margin-bottom: 50px;
 }
 .portfolio__image-wrapper {
   max-width: 400px;
-  max-width: 400px;
+  height: auto;
+  position: relative;
 }
 .portfolio__image-wrapper::after {
   content: "";
+  position: absolute;
   display: block;
   width: 100%;
-  height: 20%;
-  background-color: red;
+  height: 0;
+  background-color: var(--color-first);
+  bottom: 0;
+  transition: all 0.5s linear;
+}
+.portfolio__image-wrapper:hover::after {
+  height: 50px;
+}
+.portfolio__description {
+  position: absolute;
+  font-family: var(--font-second);
+  font-size: 30px;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotateX(90deg);
+  z-index: 2;
+  transition: all 0.5s linear;
+}
+.portfolio__image-wrapper:hover .portfolio__description {
+  transform: translateX(-50%) rotateX(0deg);
+  bottom: 15px;
 }
 
 /*---------------------------------- team -----------------------------------*/
