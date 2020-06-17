@@ -885,7 +885,7 @@ body {
   outline: none;
 }
 .slider {
-  position: relative;
+  /* position: relative; */
   padding: 0 50px 0 50px;
 }
 
@@ -957,6 +957,7 @@ body {
 .get-in {
   background-color: var(--color-semi-light-gray);
   padding: 10px 0 150px 0;
+  position: relative;
 }
 .get-in > .container {
   width: 750px;
@@ -1052,10 +1053,6 @@ body {
   font-size: 16px;
   font-family: var(--font-first);
   font-weight: 700;
-}
-form {
-  position: relative;
-  z-index: 2;
 }
 .form__button {
   display: flex;

@@ -5,7 +5,6 @@ $(document).ready(function () {
     slidesToShow: 3,
     initialSlide: 0,
     speed: 1000,
-    autoplay: true,
     autoplaySpeed: 3000,
     draggable: false,
     waitForAnimate: false,
