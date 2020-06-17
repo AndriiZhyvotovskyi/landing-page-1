@@ -7,6 +7,6 @@ $(document).ready(function () {
     speed: 1000,
     autoplaySpeed: 3000,
     draggable: false,
-    waitForAnimate: false,
+    waitForAnimate: true,
   });
 });

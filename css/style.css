@@ -885,7 +885,7 @@ body {
   outline: none;
 }
 .slider {
-  /* position: relative; */
+  position: relative;
   padding: 0 50px 0 50px;
 }
 
