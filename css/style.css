@@ -613,6 +613,7 @@ body {
   padding: 75px 60px 60px 125px;
   width: 460px;
   position: absolute;
+  z-index: 5;
 }
 .steps__title {
   font-size: 25px;
