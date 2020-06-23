@@ -390,6 +390,20 @@ body {
   position: relative;
   transition: all 0.3s linear;
 }
+.portfolio__image-wrapper::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 128, 128);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all .1s linear;
+}
+.portfolio__image-wrapper:hover::before {
+  opacity: .7;
+}
 .portfolio__image-wrapper:hover {
   transform: scale(1.02);
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
@@ -482,6 +496,20 @@ body {
 }
 .team__image {
   margin: 3px auto 15px auto;
+}
+.team__list-wrapper::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 128, 128);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all .1s linear;
+}
+.team__item:hover .team__list-wrapper::after {
+  opacity: .7;
 }
 .team__title {
   font-size: 18px;
